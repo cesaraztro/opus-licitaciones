@@ -1,0 +1,23 @@
+{
+  "_nota": "Obra FICTICIA para pruebas. Costos inventados; no usar en una licitación.",
+  "obra": {"nombre": "Banqueta y guarnición calle de prueba", "clave": "PRUEBA-001", "ubicacion": "Hermosillo, Son.", "fecha": "2026-11-11"},
+  "factores": {"indirectos_campo": 0.06, "indirectos_oficina": 0.08, "financiamiento": 0.012, "utilidad": 0.10, "cargos_adicionales": 0.005},
+  "insumos": [
+    {"clave": "MAT-CONC-200", "descripcion": "Concreto premezclado f'c=200 kg/cm2", "unidad": "m3", "tipo": "material", "costo": 2850.00, "fuente": "[[Obras/Prueba 2025]]"},
+    {"clave": "MAT-CAL", "descripcion": "Cal hidratada para trazo", "unidad": "ton", "tipo": "material", "costo": 2900.00},
+    {"clave": "MO-CUA-ALB", "descripcion": "Cuadrilla 1 albañil + 1 peón", "unidad": "jor", "tipo": "mano_obra", "costo": 1450.00, "fuente": "[[Obras/Prueba 2025]]"},
+    {"clave": "MO-CUA-TOP", "descripcion": "Cuadrilla topógrafo + cadenero", "unidad": "jor", "tipo": "mano_obra", "costo": 1800.00, "fuente": "[[Obras/Prueba 2025]]"},
+    {"clave": "HE-MENOR", "descripcion": "Herramienta menor", "unidad": "%mo", "tipo": "herramienta", "fuente": "[[Obras/Prueba 2025]]"},
+    {"clave": "EQ-VIB", "descripcion": "Vibrador para concreto", "unidad": "hr", "tipo": "equipo", "costo": 85.00, "fuente": "[[Obras/Prueba 2025]]"}
+  ],
+  "catalogo": [
+    {"tipo": "agrupador", "nivel": 1, "clave": "A", "descripcion": "PRELIMINARES"},
+    {"tipo": "concepto", "clave": "A-01", "descripcion": "Trazo y nivelación del terreno con equipo topográfico.", "unidad": "m2",
+     "matriz": [{"insumo": "MO-CUA-TOP", "cantidad": 0.004}, {"insumo": "HE-MENOR", "porcentaje_mo": 0.03}, {"insumo": "MAT-CAL", "cantidad": 0.0005}]},
+    {"tipo": "agrupador", "nivel": 1, "clave": "B", "descripcion": "BANQUETAS Y GUARNICIONES"},
+    {"tipo": "concepto", "clave": "B-01", "descripcion": "Banqueta de concreto f'c=200 kg/cm2 de 10 cm de espesor, acabado escobillado.", "unidad": "m2",
+     "matriz": [{"insumo": "MAT-CONC-200", "cantidad": 0.105}, {"insumo": "MO-CUA-ALB", "cantidad": 0.05}, {"insumo": "HE-MENOR", "porcentaje_mo": 0.03}, {"insumo": "EQ-VIB", "cantidad": 0.02}]},
+    {"tipo": "concepto", "clave": "B-02", "descripcion": "Guarnición de concreto f'c=200 kg/cm2 sección trapezoidal 15-20x40 cm.", "unidad": "ml",
+     "matriz": [{"insumo": "MAT-CONC-200", "cantidad": 0.07}, {"insumo": "MO-CUA-ALB", "cantidad": 0.04}, {"insumo": "HE-MENOR", "porcentaje_mo": 0.03}]}
+  ]
+}

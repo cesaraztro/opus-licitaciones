@@ -1,0 +1,48 @@
+{
+  "_nota": "Encabezados y orden de columnas del Excel que se importa con Liga Office. Ajustar cuando el usuario comparta una obra exportada desde su Opus 2021. Las columnas marcadas como obligatorias son las que Liga Office pide ligar.",
+  "fila_inicio": 2,
+  "hojas": {
+    "catalogo": {
+      "nombre": "Catalogo",
+      "columnas": [
+        {"campo": "nivel", "encabezado": "Nivel", "obligatoria": true},
+        {"campo": "clave", "encabezado": "Clave", "obligatoria": true},
+        {"campo": "descripcion", "encabezado": "Descripción", "obligatoria": true},
+        {"campo": "unidad", "encabezado": "Unidad", "obligatoria": true},
+        {"campo": "cantidad", "encabezado": "Cantidad", "obligatoria": true},
+        {"campo": "precio_unitario", "encabezado": "P.U.", "obligatoria": false},
+        {"campo": "importe", "encabezado": "Importe", "obligatoria": false}
+      ]
+    },
+    "insumos": {
+      "nombre": "Insumos",
+      "columnas": [
+        {"campo": "clave", "encabezado": "Clave", "obligatoria": true},
+        {"campo": "descripcion", "encabezado": "Descripción", "obligatoria": true},
+        {"campo": "unidad", "encabezado": "Unidad", "obligatoria": true},
+        {"campo": "tipo_opus", "encabezado": "Tipo", "obligatoria": true},
+        {"campo": "costo", "encabezado": "Costo", "obligatoria": true}
+      ]
+    },
+    "matrices": {
+      "nombre": "Matrices",
+      "columnas": [
+        {"campo": "clave_matriz", "encabezado": "Clave matriz", "obligatoria": true},
+        {"campo": "unidad_matriz", "encabezado": "Unidad matriz", "obligatoria": true},
+        {"campo": "clave_insumo", "encabezado": "Clave insumo", "obligatoria": true},
+        {"campo": "descripcion_insumo", "encabezado": "Descripción insumo", "obligatoria": false},
+        {"campo": "unidad_insumo", "encabezado": "Unidad insumo", "obligatoria": false},
+        {"campo": "composicion", "encabezado": "Cantidad", "obligatoria": true},
+        {"campo": "costo", "encabezado": "Costo", "obligatoria": false},
+        {"campo": "importe", "encabezado": "Importe", "obligatoria": false}
+      ]
+    }
+  },
+  "tipos_opus": {
+    "material": "Material",
+    "mano_obra": "Mano de obra",
+    "herramienta": "Herramienta",
+    "equipo": "Equipo",
+    "flete": "Material"
+  }
+}

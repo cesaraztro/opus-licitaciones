@@ -1,0 +1,16 @@
+{
+  "_nota": "Medidas FICTICIAS para pruebas.",
+  "partidas": [
+    {"clave": "A", "nivel": 1, "descripcion": "PRELIMINARES"},
+    {"clave": "B", "nivel": 1, "descripcion": "BANQUETAS Y GUARNICIONES"}
+  ],
+  "conceptos": [
+    {"clave": "A-01", "partida": "A", "descripcion": "Trazo y nivelación del terreno con equipo topográfico.", "unidad": "m2", "confianza": "alta", "origen": "Plano P-01, planta general",
+     "medidas": [{"ref": "Tramo 1", "largo": 50, "ancho": 1.5, "piezas": 1}]},
+    {"clave": "B-01", "partida": "B", "descripcion": "Banqueta de concreto f'c=200 kg/cm2 de 10 cm de espesor, acabado escobillado.", "unidad": "m2", "confianza": "media", "origen": "Plano P-01 y detalle D-03",
+     "medidas": [{"ref": "Tramo 1", "largo": 50, "ancho": 1.5, "piezas": 1},
+                 {"ref": "Registros 60x60", "largo": 0.6, "ancho": 0.6, "piezas": 2, "descontar": true}]},
+    {"clave": "B-02", "partida": "B", "descripcion": "Guarnición de concreto f'c=200 kg/cm2 sección trapezoidal 15-20x40 cm.", "unidad": "ml", "confianza": "baja", "origen": "Plano P-01; cota ilegible en el extremo norte",
+     "medidas": [{"ref": "Tramo 1", "largo": 50, "piezas": 1}]}
+  ]
+}

@@ -1,0 +1,13 @@
+.DS_Store
+__pycache__/
+*.pyc
+.venv/
+venv/
+# Datos reales de licitaciones: no se suben al repo
+licitaciones/
+*_calculado.json
+*_pu.csv
+*_liga.xlsx
+!pruebas/ejemplo_liga.xlsx
+planos_preparados/
+historico_precios.csv

@@ -1,0 +1,12 @@
+{
+  "name": "aztrotech-opus",
+  "description": "Skills de AztroTech para presupuestos de obra pública en Opus",
+  "owner": {"name": "AztroTech"},
+  "plugins": [
+    {
+      "name": "opus-licitaciones",
+      "source": "./plugins/opus-licitaciones",
+      "description": "De los planos y el catálogo del concurso al presupuesto importado en Opus 2021, sin recapturar."
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "opus-licitaciones",
+  "version": "0.2.0",
+  "description": "Presupuestos de licitación de obra pública en Opus 2021: lectura de planos, catálogo del concurso, precios unitarios con base histórica y transferencia a Opus con Liga Office.",
+  "author": {"name": "AztroTech"}
+}
